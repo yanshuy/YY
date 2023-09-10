@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.main {
+    position: relative;
+    left: 12%;
+    height: 100vh;
+    width: 75%;
+    /* background-color: rgb(255, 145, 0); */
+}
+
+header {
+    display: flex;
+    /* background-color: brown; */
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav1 {
+    /* background-color: rgb(255, 0, 0); */
+    margin-top: 8px;
+    margin-left: 14px;
+}
+
+.nav1 h1 {
+    font-weight: 700;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+    margin-right: 10px;
+    width: 21vw;
+}
+
+.nav2 ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 8px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+#linkedin {
+    height: 80%;
+    width: 80%;
+}
+
+#github {
+    height: 72%;
+    width: 72%;
+}
+
+.main2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76vh;
+    /* background-color: blue; */
+}
+
+#miss_reyna {
+    width: 87%;
+    margin-left: 12%
+}
+
+.main_img {
+    /* background-color: blanchedalmond; */
+    width: 65%;
+    margin-top: 30px;
+}
+
+.main_text {
+    /* background-color: rgb(136, 34, 3); */
+    margin-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.main_text h1 {
+    font-size: 6.6vw;
+}
+
+.main_text h2 {
+    font-weight: 300;
+}
+
+#lgbtq {
+    animation-name: lgbtq;
+    animation-iteration-count: infinite;
+    color: fuchsia;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+
+@keyframes lgbtq {
+    0% {
+        color: fuchsia;
+    }
+
+    25% {
+        color: rgb(255, 151, 215);
+    }
+
+    50% {
+        color: rgb(255, 69, 69);
+    }
+
+    75% {
+        color: rgb(109, 12, 177);
+    }
+
+    100% {
+        color: fuchsia;
+    }
+}
+
+.projection {
+    height: 13vh;
+    /* background-color: rgb(255, 0, 230); */
+}
+
+#arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#arrow img{
+    height: 10px;
+    width: 18px;
+}
+
+.projection h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

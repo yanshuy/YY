@@ -93,7 +93,6 @@ li {
 .main_text {
     /* background-color: rgb(136, 34, 3); */
     margin-top: 60px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -109,14 +108,14 @@ li {
 }
 
 #lgbtq {
-    animation-name: lgbtq;
+    animation-name: lgtv;
     animation-iteration-count: infinite;
     color: fuchsia;
     animation-delay: 1s;
     animation-duration: 10s;
 }
 
-@keyframes lgbtq {
+@keyframes lgtv {
     0% {
         color: fuchsia;
     }
@@ -139,6 +138,7 @@ li {
 }
 
 .projection {
+    margin-top: 30px;
     height: 13vh;
     /* background-color: rgb(255, 0, 230); */
 }
@@ -150,7 +150,7 @@ li {
     padding-top: 10px;
 }
 
-#arrow img{
+#arrow img {
     height: 10px;
     width: 18px;
 }
@@ -159,4 +159,34 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+:root {
+    --code-color: darkred;
+    --code-bg-color: #aaaaaa;
+    --code-font-size: 14px;
+    --code-line-height: 1.4;
+}
+
+::-webkit-scrollbar-corner { background: rgba(0,0,0,0.5); }
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient(skyblue,rgb(22, 22, 144),rgb(234, 66, 208));
+    border-radius: 20px;
+    border: 3px solid linear-gradient(skyblue,rgb(94, 94, 195),violet);
+}
+
+.mainpage{
+    height: 10vh;
+    width: 100%;
 }

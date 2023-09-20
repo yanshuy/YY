@@ -13,6 +13,11 @@ body {
     background-color: black;
 }
 
+::selection{
+    color: royalblue;
+    background-color: hotpink;
+}
+
 .main {
     position: relative;
     left: 12%;
@@ -27,6 +32,12 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    width: 100%;
+}
+
+.nav2 i{
+    display: none;
+    font-size: 3.7vh;
 }
 
 .nav1 {
@@ -43,7 +54,7 @@ header {
     display: flex;
     align-items: center;
     /* background-color: blue; */
-    margin-right: 10px;
+    margin-right: end;
     width: 21vw;
 }
 
@@ -60,14 +71,24 @@ li {
     padding: 0 5px;
 }
 
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    motion: ;
+    color: hotpink;
+}
+
 #linkedin {
-    height: 80%;
-    width: 80%;
+    height: 2rem;
+    width: 2rem;
 }
 
 #github {
-    height: 72%;
-    width: 72%;
+    height: 2rem;
+    width: 2rem;
 }
 
 .main2 {
@@ -80,11 +101,14 @@ li {
 }
 
 #miss_reyna {
-    width: 87%;
-    margin-left: 12%
+    width: 24vmax;
+    height: 75vmin;
+    margin-left: 10%
 }
 
 .main_img {
+    position: relative;
+    object-fit: cover;
     /* background-color: blanchedalmond; */
     width: 65%;
     margin-top: 30px;
@@ -125,7 +149,7 @@ li {
     }
 
     50% {
-        color: rgb(255, 69, 69);
+        color: rgb(247, 74, 74);
     }
 
     75% {
@@ -170,7 +194,6 @@ li {
 
 ::-webkit-scrollbar-corner { background: rgba(0,0,0,0.5); }
 
-/* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 10px;
     height: 12px;
@@ -189,4 +212,21 @@ li {
 .mainpage{
     height: 10vh;
     width: 100%;
+}
+
+@media (max-width:880px) {
+    a{
+        display: none;
+    }
+
+    img{
+        zoom: 80%;
+    }
+
+    .nav2 i{
+        position: absolute;
+        display: block;
+        left: 92%;
+    }
+    
 }

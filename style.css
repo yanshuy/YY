@@ -16,7 +16,7 @@ body {
 .full{
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: visible;
     animation-name: hidscroll;
     animation-fill-mode: forwards;
     animation-duration: 4s;
@@ -42,7 +42,7 @@ body {
     z-index: 0;
 }
 
-.ball {
+#ball {
     -webkit-animation: zoom 1s 1.8s,
         slide .5s 0s ease-in,
         bounce .9s 0.5s ease-in;

@@ -19,9 +19,9 @@ body {
     overflow-x: ;
     animation-name: hidscroll;
     animation-fill-mode: forwards;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-delay: 3.5s;
-    transition: all ease-in;
+    transition: all ease-in-out;
 }
 
 @keyframes hidscroll {
@@ -248,31 +248,33 @@ a:hover {
     position: relative;
     /* background-color: blanchedalmond; */
     width: 65%;
+    scale: 0.95;
     margin-top: 30px;
-    z-index: -10;
 }
 
 .main_text {
     /* background-color: rgb(136, 34, 3); */
     margin-top: 60px;
-    width: 90vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 90px;
+    gap: 5vw;
 }
 
 .main_text h1 {
     font-size: 6.6vw;
+    width: 100%;
 }
 
 .main_text h2 {
+    margin-top: vh;
     font-size: 1.6vw;
     font-weight: 300;
     letter-spacing: 0px;
     border-right: 1px solid;
     /* font-family: monospace; */
-    width: 29vw;
+    width: 28.5vw;
     white-space: nowrap;
     overflow: hidden;
     animation:
@@ -334,8 +336,8 @@ a:hover {
 }
 
 .projection {
-    margin-top: 30px;
-    height: 13vh;
+    margin-top: 20px;
+    height: 10vh;
     /* background-color: rgb(255, 0, 230); */
 }
 
@@ -382,8 +384,8 @@ a:hover {
     border-radius: 20px;
 }
 
-.mainpage {
-    height: 10vh;
+.forSB {
+    height: 16vh;
     width: 100%;
 }
 
@@ -401,13 +403,17 @@ a:hover {
         scale: 1.2;
     }
 
+    .main_text{
+        gap: 7vw;
+    }
+
     .main_text h1{
-        font-size: 5.5vw;
+        font-size: 6vw;
     }
 
     .main_text h2{
-        font-size: 2vw;
-        width: 36vw;
+        font-size: 1.8vw;
+        max-width: 32vw;
     }
     
     header .nav2{
@@ -425,7 +431,7 @@ a:hover {
 
 @media (width < 600px) {
     .main_text h1{
-        font-size: 5.5vw;
+        font-size: 6vw;
     }
 
     /* header .nav2 ul{
@@ -445,6 +451,11 @@ a:hover {
         position: absolute;
         display: block;
         right: -25%;
+    }
+
+    .nav1 {
+        margin-top: 8px;
+        margin-left: 0px;
     }
 }
 

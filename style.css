@@ -207,7 +207,13 @@ a {
 }
 
 a:hover {
-    color: #f473f7;
+    transition: all linear;
+}
+
+.nav2 li:hover {
+    -webkit-transform: scale(1.11);
+    transform: scale(1.11);
+    transition: .3s
 }
 
 #linkedin {
@@ -217,7 +223,6 @@ a:hover {
 
 #linkedin:hover {
     scale: 1.1;
-    filter: invert(25%) sepia(100%) saturate(1974%) hue-rotate(281deg) brightness(93%) contrast(147%);
 }
 
 #github {
@@ -227,12 +232,10 @@ a:hover {
 
 #github:hover {
     scale: 1.1;
-    filter: invert(25%) sepia(100%) saturate(1974%) hue-rotate(281deg) brightness(93%) contrast(147%);
 }
 
-.nav2 ul #resume:hover {
-    scale: 1.1;
-    filter: invert(25%) sepia(100%) saturate(1974%) hue-rotate(281deg) brightness(93%) contrast(147%);
+#resume{
+    font-size: 0.92rem;
 }
 
 .main2 {
@@ -432,6 +435,10 @@ a:hover {
     .main_text h2{
         width: 100%;
     }
+
+    #resume{
+        font-size: 0.85rem;
+    }
 }
 
 @media (width < 600px) {
@@ -468,7 +475,7 @@ a:hover {
     }
 }
 
-@media (width < px) {
+/* @media (width < px) {
 
     a {
         display: none;
@@ -483,4 +490,4 @@ a:hover {
         display: block;
         right: -30%;
     }
-}
+} */

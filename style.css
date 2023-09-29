@@ -16,14 +16,14 @@ body {
 .full{
     height: 100%;
     width: 0%;
-    animation-name: hidscroll;
+    animation-name: side;
     animation-fill-mode: forwards;
     animation-duration: 3s;
     animation-delay: 3.5s;
     transition: all ease-in-out;
 }
 
-@keyframes hidscroll {
+@keyframes side {
     to{
         width: 100%;
     }
@@ -211,8 +211,8 @@ a:hover {
 }
 
 .nav2 li:hover {
-    -webkit-transform: scale(1.11);
-    transform: scale(1.11);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     transition: .3s
 }
 
@@ -466,7 +466,7 @@ a:hover {
     }
 
     .nav2 i:hover{
-        filter: invert(47%) sepia(78%) saturate(5630%) hue-rotate(315deg) brightness(101%) contrast(92%)
+        /* filter: invert(47%) sepia(78%) saturate(5630%) hue-rotate(315deg) brightness(101%) contrast(92%) */
     }
 
     .nav1 {
